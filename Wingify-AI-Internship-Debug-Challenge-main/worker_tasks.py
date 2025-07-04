@@ -9,9 +9,9 @@ import time
 from crewai import Crew, Process
 from agents import doctor, verifier, nutritionist, exercise_specialist
 from task import help_patients, nutrition_analysis, exercise_planning, verification_task
-from util.crypto import decrypt_file
+from src.util.crypto import decrypt_file
 from memory.faiss_memory import add_to_memory
-from tools import BloodTestReportTool
+from src.tools import BloodTestReportTool
 
 from celery import shared_task
 

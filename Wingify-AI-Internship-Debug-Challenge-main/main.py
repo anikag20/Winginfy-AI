@@ -7,10 +7,10 @@ import json
 from celery.result import AsyncResult
 
 from celery_app import app as celery_app
-from worker_tasks import process_blood_test_analysis
+from src.worker_tasks import process_blood_test_analysis
 from util.crypto import encrypt_file, decrypt_file
 from database import get_analysis_by_id
-from tools import BloodTestReportTool
+from src.tools import BloodTestReportTool
 
 app = FastAPI(title="Blood Test Report Analyser")
 
